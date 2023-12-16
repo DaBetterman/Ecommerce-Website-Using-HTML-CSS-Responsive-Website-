@@ -56,14 +56,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
-  background: #E3E6F3;
+  background: transparent;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-
 }
 
 .logo {
-  width: 100px;
+  width: 75px;
   height: auto;
 }
 
@@ -76,6 +74,7 @@ body {
 #navbar li {
   list-style: none;
   padding: 0 20px;
+  position: relative;
 }
 
 #navbar li a {
@@ -86,6 +85,52 @@ body {
   transition: 0.3s ease;
 }
 
-#navbar li a:hover {
+#navbar li a:hover,
+#navbar li a.active {
   color: rgb(142, 184, 184);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(142, 184, 184);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#hero {
+  background-image: url("../img/pexels-cottonbro-studio-4621933.jpg");
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  background-image: url("../img/button.png");
+  background-color: transparent;
+  color: black;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#hero button:hover {
+  color: aliceblue;
+  transition: 0.3s ease;
 }
