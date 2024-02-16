@@ -145,7 +145,7 @@ body {
 }
 
 #feature .fe-box {
-  width: 30%;
+  width: 180px;
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
@@ -185,4 +185,33 @@ background-color: rgb(25, 80, 75);
 
 #feature .fe-box:nth-child(3) h6 {
   background-color:blueviolet;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+  background-color: green;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+  background-color: orange;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+  background-color: darkgrey;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro {
+  width: 25%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
 }
